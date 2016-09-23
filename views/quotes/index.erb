@@ -1,0 +1,9 @@
+<ul class="books">
+  <%  @quotes.each do |quote| %>
+    <li>
+      <a href="/quotes/<%= quote.id %>"><%= quote.text %></a> -- <%= quote.author %>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/quotes/new">Submit a new quote</a>

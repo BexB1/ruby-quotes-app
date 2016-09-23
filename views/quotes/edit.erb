@@ -1,0 +1,15 @@
+<h1>Edit</h1>
+
+<form action="/quotes/<%= @quote.id %>" method="POST">
+
+<input type="hidden" name="_method" value="PUT">
+
+  <label for="quote_text">Quote</label>
+  <input name="quote[text]" id="quote_text" value="<%= @quote.text%>">
+
+  <label for="quote_author">Author</label>
+  <input name="quote[author]" id="quote_author" value="<%= @quote.author %>">
+
+  <button>Update Quote</button>
+
+</form>
